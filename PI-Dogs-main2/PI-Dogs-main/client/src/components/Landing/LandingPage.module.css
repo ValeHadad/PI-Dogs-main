@@ -1,0 +1,42 @@
+.bg {
+  background-image: url("../../utils/fondo-perrito.jpg");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: normal;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.title {
+  font-family: Verdana, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #57319d;
+}
+
+.buttonContainer {
+  position: relative;
+}
+
+.button {
+  background-color: #f9c859;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 6%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}

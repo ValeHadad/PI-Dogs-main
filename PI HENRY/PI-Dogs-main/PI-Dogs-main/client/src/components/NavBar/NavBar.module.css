@@ -1,0 +1,34 @@
+/* NavBar.module.css */
+
+.bg {
+    background-color: #716e6d; /* Color de fondo */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px 0; /* Espaciado interno */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .button {
+    font-family: Verdana, Arial, sans-serif; /* Tipografía Verdana */
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #262626;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #a9826a;
+  }
+  

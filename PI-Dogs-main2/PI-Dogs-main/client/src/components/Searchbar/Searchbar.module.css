@@ -1,0 +1,32 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input {
+  position: relative;
+  padding: 10px 15px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 180px; /* Ancho ajustado */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+  color: #fff;
+  background-color: #f0b707;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button:hover {
+  font-size: 16px;
+}

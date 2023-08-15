@@ -1,0 +1,29 @@
+.bg {
+  background-color: #9391d7;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #eeeeee;
+  font-weight: 600;
+  margin-left: 60px;
+  transition: color 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #f5e4da;
+}

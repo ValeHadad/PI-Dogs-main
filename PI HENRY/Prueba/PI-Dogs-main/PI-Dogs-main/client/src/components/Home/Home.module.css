@@ -1,0 +1,66 @@
+.general {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../utils/perrito.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.filtersContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #3f3f3f;
+  font-size: 20px;
+  margin-right: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+.select {
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #9391d7;
+  margin-right: 10px;
+  color: #1d1d1d;
+  align-items: normal;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button {
+  padding: 15px 45px;
+  font-size: 16px;
+  background-color: #f4c14d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a9826a;
+}

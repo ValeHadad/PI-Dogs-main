@@ -1,0 +1,59 @@
+/* Home.module.css */
+
+.general {
+    
+    background-image: url('../../utils/perrito.jpg');
+    padding: 20px;
+    min-height: 100vh; /* Asegura que el contenido se extienda al menos hasta el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    color:#503931;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  select {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Acomoda las tarjetas en fila */
+    justify-content: center; /* Centra horizontalmente las tarjetas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    margin-top: 20px;
+  }
+  
+  .btn_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #716e6d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #a9826a;
+  }
+  

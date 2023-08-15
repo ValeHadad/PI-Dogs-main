@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../../utils/perrito.jpg");
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.title {
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 30px;
+}
+
+.img {
+  width: 400px;
+  height: 330px;
+  border-radius: 13px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px groove #d1aaff;
+}
+
+th {
+  color: #3c3c3c;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px;
+}
+
+td {
+  background-color: #f3f3f3;
+  padding: 10px;
+  font-size: 16px;
+  color: #5d675b;
+}
+
+.form {
+  border: 2px dotted #5d675b;
+  width: 79%;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+  background-color: #f78e69;
+  width: 50%;
+  height: 21%;
+  margin-top: 10px;
+  color: #f7ef99;
+  border: none;
+  border-radius: 7px;
+  letter-spacing: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #5d675b;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 9px;
+}

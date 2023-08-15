@@ -1,0 +1,42 @@
+.title {
+  color: white;
+  text-align: center; /* Añadido para centrar el texto */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  font-size: 41px;
+}
+
+.bg {
+  background-image: url("https://i.gifer.com/EP.gif");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Cambiado de "normal" a "center" */
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+align-items: center;
+align-content: center;
+justify-content: center;
+
+}
+
+.button {
+  margin-top: 20px; /* Añadido para espaciar el botón del texto */
+  padding: 0.6em 1em;
+  border: 4px solid #2a2a2a;
+  transition: ease-in-out 0.3s;
+  color: #2a2a2a;
+  font-weight: bolder;
+  font-size: 21px;
+  align-content: center;
+}
+
+.button:hover {
+  transform: scale(1.2) rotate(10deg);
+  background-color: #2a2a2a;
+  color: white;
+}
