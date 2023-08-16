@@ -63,7 +63,7 @@ export const handleSubmit = async (dogCreate, setDogCreate, setTempShow) => {
       life_span_max: "",
       temperaments: [],
     });
-    setTempShow([]);
+
     alert("Dog created successfully!");
 
     const result = window.confirm("Do you want to add a new puppy?");

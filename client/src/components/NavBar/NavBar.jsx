@@ -10,16 +10,15 @@ const NavBar = () => {
         <SearchBar />
         <div className={s.navLinks}>
           <NavLink to="/create" className={s.link}>
-            Create your dog
+            Create your puppy!
           </NavLink>
           <NavLink to="/home" className={s.link}>
             Back Home
           </NavLink>
-          
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default NavBar;

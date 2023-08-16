@@ -5,10 +5,10 @@ const LandingPage = () => {
   return (
     <div className={s.bg}>
       <div className={s.content}>
-        <h1 className={s.title}>{"Ladremos juntos!"}</h1>
+        <h1 className={s.title}>{"Meet your puppy!"}</h1>
         <div className={s.buttonContainer}>
           <Link to="/home">
-            <button className={s.button}>vamos!</button>
+            <button className={s.button}>Let's go!</button>
           </Link>
         </div>
       </div>

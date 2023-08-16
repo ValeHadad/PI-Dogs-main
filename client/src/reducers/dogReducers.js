@@ -70,7 +70,7 @@ const reducer = (state = initialState, { type, payload }) => {
       } else {
         return state;
       }
-    case FILTER_BDD: //REVISAR /([a-zA-Z]+([0-9]+[a-zA-Z]+)+)/
+    case FILTER_BDD:
       if (Array.isArray(state.allDogs)) {
         const allDogs2 = [...state.allDogs];
         return {
@@ -83,7 +83,7 @@ const reducer = (state = initialState, { type, payload }) => {
       } else {
         return state;
       }
-    case FILTER_TEMPERAMENTS: //REVISAR
+    case FILTER_TEMPERAMENTS:
       if (Array.isArray(state.allDogs)) {
         const allDogs3 = [...state.allDogs];
         return {

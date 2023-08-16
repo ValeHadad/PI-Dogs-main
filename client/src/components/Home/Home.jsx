@@ -21,7 +21,7 @@ const Home = () => {
   const [cardsShow, setCardsShow] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-
+  console.log(cardsShow);
   useEffect(() => {
     getTemperaments(setTemperaments);
   }, []);
@@ -84,8 +84,8 @@ const Home = () => {
               Data source
             </option>
             <option value="All">All Dogs</option>
-            <option value="API">Dogs Interface</option>
-            <option value="BDD">Dogs Created</option>
+            <option value="API">Only Api Dogs</option>
+            <option value="BDD">Only Dogs Created</option>
           </select>
 
           <select className={s.select} onChange={handleFilterTemperaments}>
@@ -124,8 +124,8 @@ const Home = () => {
               key={id}
               id={id}
               name={name}
-              image={image?.url}
-              weight={weight?.metric}
+              image={image}
+              weight={weight}
               temperament={temperament}
             />
           );

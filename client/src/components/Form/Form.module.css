@@ -1,7 +1,7 @@
 /* Form.module.css */
 
 .container {
-  padding: 10px;
+  padding: 15px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
   background-position: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .container_form {
@@ -18,12 +18,12 @@
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 100%;
   text-align: center;
 }
 
@@ -64,26 +64,46 @@
   margin-top: 20px;
   background-color: #f4c14d;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 
 .checkboxcontainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-column: (25 px, 5px);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .checkboxLabel {
-  display: flex;
+  display: grid;
   align-items: center;
   margin-right: 2px;
 }
 
 input[type="checkbox"] {
   margin: 0;
+}
+
+.backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 20px;
+  background-color: #f4c14d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }

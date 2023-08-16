@@ -12,16 +12,12 @@ const Detail = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const [dog, setDog] = useState([]);
-  const [] = useState({
-    name: "",
-    image: "",
-    height_min: "",
-    height_max: "",
-    weight_min: "",
-    weight_max: "",
-    life_span_min: "",
-    life_span_max: "",
-  });
+
+  const handleBackClick = () => {
+    history.push("/home");
+    console.log("button");
+  };
+
   console.log(dog);
   useEffect(() => {
     getDog(id, setDog, dispatch, history);
@@ -31,8 +27,12 @@ const Detail = () => {
   if (UUIDdogs.test(id)) {
     return (
       <div className={s.container} key={dog?.id || dog.id}>
+        <button className={s.backButton} onClick={handleBackClick}>
+          Back!
+        </button>
+        ;
         <Fragment>
-          <h2 className={s.title}>Details you should know!</h2>
+          <h2 className={s.title}>Details of this puppy</h2>
 
           <div className={s.data}>
             <img className={s.img} src={dog?.url || dog.image?.url} alt="" />
@@ -79,9 +79,13 @@ const Detail = () => {
   } else {
     return (
       <div className={s.container} key={dog[0]?.id || dog.id}>
+        <button className={s.backButton} onClick={handleBackClick}>
+          Back!
+        </button>
+        ;
         {dog.length ? (
           <Fragment>
-            <h2 className={s.title}>Details you should know!</h2>
+            <h2 className={s.title}>Details of this puppy!</h2>
 
             <div className={s.data}>
               <img

@@ -7,11 +7,12 @@ import {
 import s from "./Form.module.css";
 import { useEffect, useState } from "react";
 import { validate } from "./validate.js";
+import { useHistory } from "react-router-dom";
 
 const Form = () => {
   const [setTempShow] = useState([]);
   const [temperaments, setTemperaments] = useState([]);
-  // const [] = useState("");
+  const history = useHistory();
   const [dogCreate, setDogCreate] = useState({
     name: "",
     image: "",
@@ -71,6 +72,13 @@ const Form = () => {
   const handleSubmitButton = (event) => {
     event.preventDefault();
     handleSubmit(dogCreate, setDogCreate, setTempShow);
+  };
+
+  // botoncito para volver a la home
+
+  const handleBackClick = () => {
+    // Navegar de regreso a la página de inicio
+    history.push("/home");
   };
 
   //obtengo los temp cuando el comp se monta, y se "limpia" cuando el comp se desmonta-.
@@ -193,10 +201,13 @@ const Form = () => {
 
         <div>
           <button className={s.create_btn} type="submit">
-            Send
+            Create!
           </button>
         </div>
       </form>
+      <button className={s.backButton} onClick={handleBackClick}>
+        Back!
+      </button>
     </div>
   );
 };
